@@ -293,7 +293,7 @@ const renderLoop = () => {
   });
   pass.setPipeline(renderOutputPipeline);
   pass.setBindGroup(0, renderOutputBindGroup[step%2]);
-  pass.draw(6, 1);
+  pass.draw(3, 1);
   pass.end();
 
   // Update uniforms buffer
